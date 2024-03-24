@@ -205,7 +205,19 @@ input[type="checkbox"] {
     left: 20%;
     padding: 2px;
     background: var(--color-white);
+    opacity:0;
+    transition: all 0.6s ease;
   }
+
+  .content-text-message.content-text-message-show-add {
+    opacity: 1;
+  }
+  
+
+  .content-text-message.content-text-message-show-remove {
+    opacity: 0;
+  }
+  
 .message-text{
     font-size: 1.2rem;
     font-family: var(--font-title);
