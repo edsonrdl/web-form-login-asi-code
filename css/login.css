@@ -146,6 +146,13 @@ input[type="checkbox"] {
     color:var(--color-white);
     box-shadow: var(--box-shadow-back);
     cursor: pointer;
+    font-size: 2rem;
+    font-family: var(--font-title);
+    font-weight: 600;
+    transition: all 0.6s ease;
+  }
+  .btn-submit-form:hover{
+  scale: 1.1;
   }
   .container-backgrond-asi-code{
     position: relative;
@@ -205,19 +212,22 @@ input[type="checkbox"] {
     left: 20%;
     padding: 2px;
     background: var(--color-white);
-    opacity:0;
-    transition: all 0.6s ease;
+    animation: text-messageIn 6s ;
   }
 
-  .content-text-message.content-text-message-show-add {
-    opacity: 1;
-  }
-  
+  @keyframes text-messageIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
-  .content-text-message.content-text-message-show-remove {
-    opacity: 0;
-  }
-  
+
 .message-text{
     font-size: 1.2rem;
     font-family: var(--font-title);

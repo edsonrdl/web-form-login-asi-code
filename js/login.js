@@ -14,6 +14,7 @@ form.addEventListener('submit', function(event) {
   
     if (valueInputName.trim() !== '' && valueInputSobrenome.trim() !== '' && valueInputEMail.trim() !== '') {
       messageSuccess();
+      form.reset();
     } else {
         messageError();
     }
@@ -38,9 +39,7 @@ function displayMessage(message, messageType) {
     p.classList.add("message-text");
 
     div.appendChild(p);
-    setTimeout(() => {
-        div.classList.add('content-text-message-show-add'); 
-    }, 100); 
+   
     containerMessageText.appendChild(div);
 
     if (messageType === 'success') {
@@ -48,25 +47,18 @@ function displayMessage(message, messageType) {
 
         setTimeout(() => {
             removeMessageSuccesfully();
-        }, 5000);
+        }, 6000);
     } else if (messageType === 'error') {
         containerMessageText.classList.add("error-message");
         setTimeout(() => {
             removeMessageSuccesfully();
-        }, 5000);
+        }, 6000);
     }
     function removeMessageSuccesfully(){
         const containerDivText=document.querySelector(".content-text-message");
-        const showMessage=document.querySelector(".content-text-message-show-add");
-        showMessage.classList.remove('content-text-message-show-add'); 
-        showMessage.classList.add('content-text-message-show-remove'); 
-        setTimeout(() => {
+     
             containerDivText.remove();
-        }, 100); 
-
-
-       
-
+   
     }
 }
 
