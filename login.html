@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>ASI CODE LOGIN</title>
+</head>
+
+<body>
+    <div class="container-login-form-backgrond-asi-code">
+        <div class="container-login">
+            <div class="container-logo-name-text">
+                <div class="content-log">
+                    <img src="./assets/SVG CAT ANIMADO SALTOLOGO ASI CODE.svg" alt="Logo ASI CODE">
+                </div>
+                <div class="content-form">
+                    <h1>Registration Form</h1>
+                    <form  action="" method="post">
+                        <fieldset class="fieldset-personal">
+                            <legend>Personal Information:</legend>
+                            <label for="">Name</label>
+                            <input minlength="3" maxlength="10" type="text" placeholder="Digite seu primeiro nome" required>
+                            <label  for="">Sobrenome</label>
+                            <input minlength="3" maxlength="10" type="text" placeholder="Digite seu sobrenome" required>
+                            <label for="">E-mail</label>
+                            <input  type="text" placeholder="example@example.com" required>
+                        </fieldset>
+                        <fieldset class="fieldset-developer">
+                            <legend>Developer Information:</legend>
+                            <fieldset  class="fieldset-developer-front">
+                                <legend>Technologies Front-end</legend>
+                                <label for="front-end">HTML</label>
+                                <input type="checkbox" id="html" name="front[]" value="html">
+                                <label for="front-end">CSS</label>
+                                <input type="checkbox" id="css" name="front[]" value="css">
+                                <label for="front-end">JavaScript</label>
+                                <input type="checkbox" id="javascript" name="front[]" value="javascript">
+                            </fieldset>
+                            <fieldset class="fieldset-developer-back">
+                                <legend >Technologies Back-end</legend>
+                                <label for="front-end">C#</label>
+                                <input type="checkbox" id="csharp" name="front[]" value="csharp">
+                                <label for="front-end">ASP .Net Core</label>
+                                <input type="checkbox" id="asp-net-core" name="front[]" value="asp-net-core">
+                                <label for="front-end">SQLServer</label>
+                                <input type="checkbox" id="sql-server" name="front[]" value="sql-server">
+                            </fieldset>
+                        </fieldset>
+                        <button class="btn-submit-form" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-backgrond-asi-code">
+
+        </div>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
