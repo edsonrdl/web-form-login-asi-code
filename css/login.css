@@ -147,7 +147,66 @@ input[type="checkbox"] {
     box-shadow: var(--box-shadow-back);
   }
   .container-backgrond-asi-code{
+    position: relative;
+    height: 100%;
     width: 100%;
     grid-area:area-container-backgrond-asi-code ;
-    background: var(--color-lavender-floral);
+    background: linear-gradient(90deg, #c478f3 0%, #991AE6 100%);
   }
+  .mask-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #1b1b1b 0%, #3e3e3e 100%);
+    bottom: 0;
+    clip-path: polygon(0 63%, 0% 100%, 100% 100%);
+    z-index: 5;
+  }
+  .mask-violet{
+    width: 100%;
+    height: 100%;
+    background: var(--color-blue-violet);
+    position: absolute;
+    bottom: 0;
+    clip-path: polygon(100% 54%, 0% 100%, 100% 100%);
+    z-index: 5;
+  }
+  .container-cat-asi-code-message{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: safe;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+  }
+  .content-cat{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30%;
+  }
+  .content-cat img{
+    scale: 1.5;
+    width: 100%;
+  }
+  .content-text-message{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    top: 20%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    left: 20%;
+    padding: 2px;
+    background: var(--color-white);
+  }
+.message-text{
+    font-size: 1.2rem;
+    font-family: var(--font-title);
+    color: var(--color-blue-violet);
+}
