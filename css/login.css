@@ -145,6 +145,7 @@ input[type="checkbox"] {
     background: var(--color-blue-violet);
     color:var(--color-white);
     box-shadow: var(--box-shadow-back);
+    cursor: pointer;
   }
   .container-backgrond-asi-code{
     position: relative;
