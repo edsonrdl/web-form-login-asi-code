@@ -6,7 +6,7 @@
     --color-background: #1b1b1b;
     --color-white: #FEFEFE;
     --color-black-1: #000000;
-    --font-title:  font-family: "Playfair Display", serif;;
+    --font-title: "Playfair Display", serif;;
     --color-black-2: rgb(33, 33, 33);
     --color-blue-violet: #991AE6;
     --box-shadow-back: 0 1rem 2rem var(--color-shadow);
@@ -41,23 +41,22 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 50px;
     background: linear-gradient(90deg, #3e3e3e 0%, #1b1b1b 100%);
-    grid-area:area-container-login ;
+    grid-area:area-container-login;
   }
   .container-logo-name-text{
     padding: 50px;
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: 100%;
+    height: 90%;
     background:transparent;
     box-shadow: var(--box-shadow-back);
   }
   .content-log{
     width: 80px;
   }
-  .content-form, form{
+  .content-form,form{
     width: 100%;
     height: 100%;
     display: flex;
@@ -65,7 +64,7 @@
     justify-content: space-evenly;
   }
   .content-form h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: var(--font-title);
     color: var(--color-blue-violet);
   }
@@ -78,10 +77,11 @@
   }
   legend {
     color: var(--color-lavender-floral);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
     font-family: var(--font-title);
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .fieldset-personal{
     display: flex;
@@ -109,7 +109,6 @@
     background: transparent;
     border-bottom: #991AE6 solid 1px;
   }
-/* Estilo para o texto do input */
 input[type="text"] {
     color: #ffffff; 
     font-weight: 600;
@@ -119,7 +118,7 @@ input::placeholder {
     font-size: 1rem;
     font-weight: 500;
     color:var(--color-white);
-    opacity: 50%;
+    opacity: 40%;
   }
 input[type="checkbox"] {
     appearance: none;
@@ -140,25 +139,25 @@ input[type="checkbox"] {
 
   .btn-submit-form{
     margin: 0px 100px 0px 100px;
-    height: 50px;
+    height: 40px;
     border-radius: 30px;
     background: var(--color-blue-violet);
     color:var(--color-white);
     box-shadow: var(--box-shadow-back);
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: var(--font-title);
     font-weight: 600;
-    transition: all 0.6s ease;
+    transition: all 0.4s ease;
   }
   .btn-submit-form:hover{
-  scale: 1.1;
+    scale: 1.1;
   }
   .container-backgrond-asi-code{
     position: relative;
     height: 100%;
     width: 100%;
-    grid-area:area-container-backgrond-asi-code ;
+    grid-area:area-container-backgrond-asi-code;
     background: linear-gradient(90deg, #c478f3 0%, #991AE6 100%);
   }
   .mask-back{
@@ -229,7 +228,7 @@ input[type="checkbox"] {
 
 
 .message-text{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: var(--font-title);
     color: var(--color-blue-violet);
 }
